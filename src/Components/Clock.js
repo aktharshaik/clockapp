@@ -23,7 +23,7 @@ class Clock extends React.Component {
     }
     render() {
       return (
-        <p className="App-clock">
+        <p>
           <h2>The time is {this.state.time}.</h2>
         </p>
       );
