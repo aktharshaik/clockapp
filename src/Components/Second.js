@@ -9,7 +9,8 @@ class Second extends React.Component{
         const {name} = this.props;
         return(
             <React.Fragment>
-                <p>In Second.js Click the Button to Change State</p>
+                <p>Inside Second.js</p>
+                <p>Click the 'Change' Button to Change State, 'Restore' Button to Restore State.</p>
                 <h1>{name}</h1>
             </React.Fragment>
         )
