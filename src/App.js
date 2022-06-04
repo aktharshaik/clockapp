@@ -1,5 +1,6 @@
 import './App.css';
 import Clock from './Components/Clock';
+import First from './Components/First';
 
 // function App() {
 //   return (
@@ -11,8 +12,10 @@ import Clock from './Components/Clock';
 const App = (props) =>{
   return (
     <div className="App">
-      <Clock />
       <h1>WELCOME</h1>
+      <Clock />
+      <First />
+      <hr />
     </div>
   );
 }
