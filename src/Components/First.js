@@ -31,8 +31,8 @@ class First extends React.Component{
                 <p align="left">First.js Start Here</p>
                 <h2>Initial name is : {this.state.name}</h2>
                 <button onClick={this.changeName}>Change</button>
+                <p align="center">This is call to element variable. Output is from Second.js {element}</p>
                 <p align="left">First.js Ends Here</p>
-                {element}
             </div>
         )
     }

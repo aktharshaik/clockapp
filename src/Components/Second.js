@@ -8,7 +8,7 @@ class Second extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <p>This is from Second.js. Click the Button to Change State</p>
+                <p>In Second.js Click the Button to Change State</p>
                 <h1>{this.props.name}</h1>
             </React.Fragment>
         )
