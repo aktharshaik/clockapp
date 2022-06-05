@@ -25,24 +25,22 @@ class First extends React.Component{
         )
     }
 
-    render(){
-        const {name}=this.state;
-        var element;
-        if(this.state.name === 'Constructor State'){
-            element = <Second name={'Default State'} />
-        }
-        else{
-            element = <Second name={this.state.name} />
-        }
 
+  checkName = () => {
+    return this.state.name === "Constructor State"
+      ? "Default State"
+      : this.state.name;
+  }
+
+    render(){
         return(
             <div>
                 <p align="left">First.js Start Here</p>
                 <h2>Initial name is : {this.state.name}</h2>
                 <button onClick={this.changeName}>Change</button>
                 <button onClick={this.restoreName}>Restore</button>
-                <p align="center">This is call to element variable. Output is from Second.js{element}</p>
-                <Second name={{name}==='Constructor State'?'Default State':{name}} />
+                <p align="center">This is call to element variable. Output is from Second.js</p>
+                <Second name={this.checkName()} />
                 <p align="left">First.js Ends Here</p>
             </div>
         )
