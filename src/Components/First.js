@@ -39,7 +39,7 @@ class First extends React.Component{
                 <h2>Initial name is : {this.state.name}</h2>
                 <button onClick={this.changeName}>Change</button>
                 <button onClick={this.restoreName}>Restore</button>
-                <p align="center">This is call to element variable. Output is from Second.js</p>
+                <p align="center">This is call to checkName Function. Output is from Second.js</p>
                 <Second name={this.checkName()} />
                 <p align="left">First.js Ends Here</p>
             </div>
