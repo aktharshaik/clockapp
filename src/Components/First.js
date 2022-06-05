@@ -25,12 +25,11 @@ class First extends React.Component{
         )
     }
 
-
-  checkName = () => {
-    return this.state.name === "Constructor State"
-      ? "Default State"
-      : this.state.name;
-  }
+    checkName = () => {
+        return this.state.name === "Constructor State"
+          ? "Default State"
+          : this.state.name;
+    }
 
     render(){
         return(
