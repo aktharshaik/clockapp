@@ -26,6 +26,7 @@ class First extends React.Component{
     }
 
     render(){
+        const {name}=this.state;
         var element;
         if(this.state.name === 'Constructor State'){
             element = <Second name={'Default State'} />
@@ -40,7 +41,8 @@ class First extends React.Component{
                 <h2>Initial name is : {this.state.name}</h2>
                 <button onClick={this.changeName}>Change</button>
                 <button onClick={this.restoreName}>Restore</button>
-                <p align="center">This is call to element variable. Output is from Second.js {element}</p>
+                <p align="center">This is call to element variable. Output is from Second.js{element}</p>
+                <Second name={{name}==='Constructor State'?'Default State':{name}} />
                 <p align="left">First.js Ends Here</p>
             </div>
         )
