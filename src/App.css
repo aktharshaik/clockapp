@@ -16,3 +16,17 @@
 .App-link {
   color: #61dafb;
 }
+
+p.rm-wspace {
+  margin: 0px 0px 0px 20px;
+  padding: 1;
+  line-height: 30px;
+  height: 25px;
+}
+
+div {
+  padding: 0;
+  margin-bottom: 5px;
+  text-align: left;
+  /* border: 1px solid black; */
+}
